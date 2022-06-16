@@ -46,7 +46,8 @@ contract BBSEBank {
     
     // TODO: Check yearly return rate and set the variable
 
-    interestPerSecondForMinDeposit = ((MIN_DEPOSIT_AMOUNT * yearlyReturnRate) / 100) / YEAR_SECONDS;
+    // TODO: Uncomment
+    // interestPerSecondForMinDeposit = ((MIN_DEPOSIT_AMOUNT * yearlyReturnRate) / 100) / YEAR_SECONDS;
   }
 
   /**
@@ -70,11 +71,15 @@ contract BBSEBank {
   function withdraw() public {
     // TODO: Check whether the investor (i.e. function caller) has an active investment
     Investor storage investor = investors[msg.sender];
-    uint depositedAmount = investor.amount;
+    
+    // TODO: Uncomment
+    // uint depositedAmount = investor.amount;
 
     // TODO: Find the deposit duration and store it in uint depositDuration variable
 
-    uint interestPerSecond = interestPerSecondForMinDeposit * (depositedAmount / MIN_DEPOSIT_AMOUNT);
+
+    // TODO: Uncomment
+    // uint interestPerSecond = interestPerSecondForMinDeposit * (depositedAmount / MIN_DEPOSIT_AMOUNT);
 
     /* TODO: Calculate the interest using interestPerSecond and depositDuration
     *        Store it in uint interest variable

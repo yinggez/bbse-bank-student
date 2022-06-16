@@ -11,7 +11,7 @@ contract BBSEToken is ERC20 {
   * @dev Calls the ERC20 constructor with {name} and {symbol} values.
   * Sets the minter as the contract deployer.
   */
-  constructor() public payable ERC20() {
+  constructor() public payable ERC20("TOKEN NAME", "SYMBOL") {
     // TODO: Complete the constructor
   }
 
