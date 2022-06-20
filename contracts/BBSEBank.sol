@@ -52,7 +52,7 @@ contract BBSEBank {
 
   /**
   * @dev Initializes the respective investor object in investors mapping for the caller of the function.
-  * Sets the amount to message value and starts the deposit time (hint: use block's timestamp).
+  * Sets the amount to message value and starts the deposit time (hint: use block number).
   * Minimum deposit amount is 1 Ether (be careful about decimals!)
   * Investor can't have an already active deposit.
   */
@@ -75,7 +75,7 @@ contract BBSEBank {
     // TODO: Uncomment
     // uint depositedAmount = investor.amount;
 
-    // TODO: Find the deposit duration and store it in uint depositDuration variable
+    // TODO: Find the deposit duration and store it in uint depositDuration variable (assume each block takes 14 seconds)
 
 
     // TODO: Uncomment
