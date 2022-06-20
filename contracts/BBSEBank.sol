@@ -12,6 +12,9 @@ contract BBSEBank {
   
   // Seconds in a year
   uint32 public constant YEAR_SECONDS = 31536000; 
+
+  // Average block time in Ethereum
+  uint8 public constant AVG_BLOCK_TIME = 14;
   
   // Minimum deposit amount
   // TODO: Create a MIN_DEPOSIT_AMOUNT constant variable
@@ -52,7 +55,7 @@ contract BBSEBank {
 
   /**
   * @dev Initializes the respective investor object in investors mapping for the caller of the function.
-  * Sets the amount to message value and starts the deposit time (hint: use block number).
+  * Sets the amount to message value and starts the deposit time (hint: use block number as the start time).
   * Minimum deposit amount is 1 Ether (be careful about decimals!)
   * Investor can't have an already active deposit.
   */
@@ -75,7 +78,7 @@ contract BBSEBank {
     // TODO: Uncomment
     // uint depositedAmount = investor.amount;
 
-    // TODO: Find the deposit duration and store it in uint depositDuration variable (assume each block takes 14 seconds)
+    // TODO: Find the deposit duration and store it in uint depositDuration variable (block_number_difference x average_block_time)
 
 
     // TODO: Uncomment
