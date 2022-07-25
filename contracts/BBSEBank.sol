@@ -88,15 +88,15 @@ contract BBSEBank {
     *        Store it in uint interest variable
     */
 
+    /* TODO: Reset the respective investor object in investors mapping
+    *        You can set the amount and start time to 0
+    */
+
     /* TODO: Send back the deposited Ether to investor using the transfer method
     *        Dont' forget to cast the investor address to a payable address
     */
 
     // TODO: Mint BBSE tokens to to pay out the interest
-
-    /* TODO: Reset the respective investor object in investors mapping
-    *        You can set the amount and start time to 0
-    */
   }
   
 }
