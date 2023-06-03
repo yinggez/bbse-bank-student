@@ -13,8 +13,8 @@ contract BBSEBank {
   // Seconds in a year
   uint32 public constant YEAR_SECONDS = 31536000; 
 
-  // Average block time in Ethereum
-  uint8 public constant AVG_BLOCK_TIME = 14;
+  // Block time in PoS-Ethereum
+  uint8 public constant BLOCK_TIME = 12;
   
   // Minimum deposit amount
   // TODO: Create a uint MIN_DEPOSIT_AMOUNT constant variable
@@ -78,7 +78,7 @@ contract BBSEBank {
     // TODO: Uncomment
     // uint depositedAmount = investor.amount;
 
-    // TODO: Find the deposit duration and store it in uint depositDuration variable (block_number_difference x average_block_time)
+    // TODO: Find the deposit duration and store it in uint depositDuration variable (block_number_difference x block_time)
 
 
     // TODO: Uncomment
