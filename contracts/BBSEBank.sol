@@ -17,7 +17,7 @@ contract BBSEBank {
   uint8 public constant AVG_BLOCK_TIME = 14;
   
   // Minimum deposit amount
-  // TODO: Create a MIN_DEPOSIT_AMOUNT constant variable
+  // TODO: Create a uint MIN_DEPOSIT_AMOUNT constant variable
 
   /* Interest earned per second for a minumum deposit amount.
    * Equals to the yearly return of the minimum deposit amount
