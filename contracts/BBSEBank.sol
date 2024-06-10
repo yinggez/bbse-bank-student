@@ -16,7 +16,7 @@ contract BBSEBank {
   // Block time in PoS-Ethereum
   uint8 public constant BLOCK_TIME = 12;
   
-  // Minimum deposit amount
+  // Minimum deposit amount (1 Ether, expressed in Wei)
   // TODO: Create a uint MIN_DEPOSIT_AMOUNT constant variable
 
   /* Interest earned per second for a minumum deposit amount.
